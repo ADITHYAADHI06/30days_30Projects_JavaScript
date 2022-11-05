@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+margin:0; 
+padding:0;
+box-sizing:border-box;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap: 30px;
+            flex-direction: column;
+            background-color: black;
+            
+        }
+        .container{
+            width:350px; 
+            height:200px;
+            background-color: rgb(34, 93, 93);
+            border-radius: 20px;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            gap: 30px;
+          flex-direction: column;
+        }
+        h1{
+          color: rgb(255, 255, 255);
+        }
+        select{
+            width: 90%;
+        }
+        .BUTTON_GHR {
+   background: #3D94F6;
+   background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+   background-image: -webkit-gradient(to bottom, #3D94F6, #1E62D0);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   color: #000000;
+   font-family: Brush Script MT;
+   font-size: 10px;
+   font-weight: 100;
+   padding: 5px 10px;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 1px 1px 20px 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   border: none;
+   outline: none;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   width: 40%;
+   text-align: center;
+}
+
+.BUTTON_GHR:hover {
+    border: none;
+   outline: none;
+   background: #1E62D0;
+   background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+   background-image: -webkit-gradient(to bottom, #1E62D0, #3D94F6);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <h1>SNAKE WATER AND GUN GAME</h1>
+    <div class="container">
+        <select name="type" id="type">
+            <option value="null">Select Your Choice....</option>
+            <option value="snake">snake</option>
+            <option value="water">water</option>
+            <option value="gun">gun</option>
+        </select>
+
+       <button class="BUTTON_GHR"  id="btn">Play</button>
+
+       <p id="result"></p>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
